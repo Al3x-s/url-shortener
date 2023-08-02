@@ -11,10 +11,24 @@
     <input type="submit" value="Generate"/>
   </form>
   {% if result %}
-
-  <div class="res">{{ result }}</div>
+  <div class="res">
+	<p> {{result}} </p>
+  </div>
   {% endif %}
-
-
-
+  {% if exist %}
+  <div class="container">
+	<p> Original Link: {{exist}} </p>
+	<p> Short URL: 
+  	<a href="{{exist}}" target="__blank__"> {{ key }} </a>
+	</p>
+  </div>
+  {% endif %}
+  {% if new_link %}
+<div class="container">
+	<p> Original Link: {{new_link}} </p>
+	<p> Short URL: 
+  	<a href="{{new_link}}" target="__blank__"> {{ short_link }} </a>
+	</p>
+  </div>
+   {% endif %}
 </body>
