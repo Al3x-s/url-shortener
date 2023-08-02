@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <title>thishitsux</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+  <h3>URL Shortener</h3>
+  <form action="/" method="post">
+    <input type="text" name="url" placeholder="Enter a url" required />
+    <input type="submit" value="Generate"/>
+  </form>
+  {% if result %}
+
+  <div class="res">{{ result }}</div>
+  {% endif %}
+
+
+
+</body>
