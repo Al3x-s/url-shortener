@@ -49,10 +49,8 @@ def return_link(check):
 
 
 
-# Example usage:
 #id_to_add = "your_id_value"
 #if not check_if_id_exists(id_to_add):
-    # Perform the logic to add the new 'id' to the database
-    # Add the value to the database, INSERT INTO links (link, id) VALUES (?, ?)
+    #logic
 #else:
-#    print(f"The ID '{id_to_add}' already exists in the database.")
+#already exost
